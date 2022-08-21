@@ -12,7 +12,7 @@ header span{
 .logo{
     font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.193;
 color:black;
 text-decoration: none;
 font-family: 'Raleway';
@@ -27,7 +27,7 @@ nav a{
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.2;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
@@ -47,7 +47,7 @@ header>ul{
 header>ul>li>a{
     font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.2;
 letter-spacing: 0.02em;
 color: #757575;
 text-decoration: none;
@@ -99,6 +99,7 @@ color:#FFFFFF;
 .second-section h3{
     font-weight: 700;
 font-size: 14px;
+line-height: 1.2;
 letter-spacing: 0.03em;
 }
 
@@ -114,6 +115,7 @@ color: #757575;
 .third-section h2{
     font-weight: 700;
 font-size: 36px;
+line-height: 42px;
 letter-spacing: 0.03em;
 }
 
@@ -124,6 +126,7 @@ letter-spacing: 0.03em;
 .fourth-section h2{
     font-weight: 700;
 font-size: 36px;
+line-height: 42px;
 letter-spacing: 0.03em;
 }
 
@@ -190,6 +193,7 @@ footer{
     font-family: 'Raleway';
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    line-height: 1.193;
 }
 
 footer span{
@@ -211,6 +215,10 @@ address{
 }
 
 footer a:hover{
+    color:#2196F3;
+}
+
+footer a:focus{
     color:#2196F3;
 }
 
