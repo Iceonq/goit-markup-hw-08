@@ -13,7 +13,7 @@ header span{
     font-weight: 700;
 font-size: 26px;
 line-height: 1.193;
-color:black;
+color:#000000;
 text-decoration: none;
 font-family: 'Raleway';
 letter-spacing: 0.03em;
@@ -37,7 +37,7 @@ nav a:hover{
 }
 
 a:visited {
-    color:black;
+    color:#000000;
 }
 
 header>ul{
@@ -72,17 +72,18 @@ header{
 .first-section button{
     width: 121px;
     height: 38px;
-    background: #F5F4FA;
+    background: #2196F3;
     border-radius: 4px;
-    border-color: #F5F4FA;
+    border-color: #2196F3;
     cursor:pointer;
+    color:#FFFFFF;
 }
 
 .first-section button:hover{
-    background-color:#2196F3;
-    color:#FFFFFF;
+    background-color:#F5F4FA;
+    color:#000000;
     transition: 0.4s;
-    border-color:#2196F3;
+    border-color:#F5F4FA;
 }
 
 main h1{
@@ -215,10 +216,6 @@ address{
 }
 
 footer a:hover{
-    color:#2196F3;
-}
-
-footer a:focus{
     color:#2196F3;
 }
 
