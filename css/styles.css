@@ -4,9 +4,8 @@ body{
     font-family: "Roboto", "Raleway", sans-serif;
 }
 
-header span{
+.logo-span{
    color:#2196F3;
-   
 }
 
 .logo{
@@ -19,32 +18,29 @@ font-family: 'Raleway';
 letter-spacing: 0.03em;
 }
 
-nav li{
+.nav-item-list{
     list-style: none;
 }
 
-nav a{
+.nav-bar-item{
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-decoration: none;
+color: #000000;
 }
 
-nav a:hover{
+.nav-bar-item:hover{
     color:#2196F3;
 }
 
-header a{
-    color:#000000;
-}
-
-header>ul{
+.nav-links{
     list-style: none;
 }
 
-header>ul>li>a{
+.nav-address{
     font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
@@ -53,15 +49,24 @@ color: #757575;
 text-decoration: none;
 }
 
-header>ul>li>a:hover{
+.nav-phone-number{
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #757575;
+text-decoration: none;
+}
+
+.nav-links a:hover{
     color:#2196F3;
 }
 
-header>ul>li>a:focus{
+.nav-links a:focus{
     color:#2196F3;
 }
 
-header{
+.main-header{
     border-bottom: 1px solid #ECECEC;;
 }
 
@@ -69,7 +74,7 @@ header{
     background: #2F303A;
 }
 
-.first-section button{
+.first-section-button{
     width: 121px;
     height: 38px;
     background: #2196F3;
@@ -79,21 +84,21 @@ header{
     color:#FFFFFF;
 }
 
-.first-section button:hover{
+.first-section-button:hover{
     background-color:#F5F4FA;
     color:#000000;
     transition: 0.4s;
     border-color:#F5F4FA;
 }
 
-main h1{
+.first-section-header{
     font-weight: 900;
 font-size: 44px;
 line-height: 0.733;
 color:#FFFFFF;
 }
 
-.second-section ul{
+.second-section-item-list{
     list-style: none;
 }
 
@@ -113,7 +118,7 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.third-section h2{
+.third-section-header{
     font-weight: 700;
 font-size: 36px;
 line-height: 1.167;
@@ -124,12 +129,6 @@ letter-spacing: 0.03em;
     background: #F5F4FA;
 }
 
-.fourth-section h2{
-    font-weight: 700;
-font-size: 36px;
-line-height: 1.167;
-letter-spacing: 0.03em;
-}
 
 .fourth-section h3{
     font-weight: 500;
@@ -145,11 +144,11 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.fourth-section ul{
+.fourth-section-item-list{
     list-style: none;
 }
 
-.portfolio-nav-bar button{
+.portfolio-nav-button{
     width: 121px;
 height: 38px;
 background: #F5F4FA;
@@ -158,35 +157,35 @@ border-color: #F5F4FA;
 cursor:pointer;
 }
 
-.portfolio-nav-bar button:hover{
+.portfolio-nav-button:hover{
     background-color:#2196F3;
     color:#FFFFFF;
     transition: 0.4s;
 }
 
-main>ul>li{
+.portfolio-image-list{
     list-style: none;
 }
 
-main>ul>li>h3{
+.portfolio-image-list h3{
     font-weight: 700;
 font-size: 18px;
 letter-spacing: 0.06em;
 line-height:2;
 }
 
-main>ul>li>p{
+.portfolio-image-list p{
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: #757575;
 }
 
-footer{
+.main-footer{
     background-color:#2F303A;
     color:#FFFFFF;
 }
-#footer-logo{
+.footer-logo{
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
@@ -196,27 +195,23 @@ footer{
     line-height: 1.193;
 }
 
-footer span{
-color:#2196F3;
-}
-
-footer a{
+.footer-contact{
 font-size: 14px;
 text-decoration: none;
 color: rgba(255, 255, 255, 0.6);
 line-height: 1.193;
 }
 
-address{
+.footer-address{
     font-size: 14px;
     line-height:1.71;
     letter-spacing: 0.03em;
 }
 
-footer a:hover{
+.footer-contact:hover{
     color:#2196F3;
 }
 
-footer a:focus{
+.footer-contact:focus{
     color:#2196F3;
 }
