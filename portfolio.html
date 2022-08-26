@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <title>Portfolio</title>
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header container">
+    <div class="navbar-left-container">
     <a class="logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
   <nav>
     <ul class="nav-item-list">
@@ -20,13 +22,14 @@
       <li><a class="nav-bar-item" href="index.html">Kontakt</a></li>
     </ul>
   </nav>
+  </div>
   <ul class="nav-links">
-    <li><a class="nav-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li><a class="nav-address" href="tel:+48111111111">+48 111 111 111</a></li>
+  <li><a class="nav-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+  <li><a class="nav-address" href="tel:+48111111111">+48 111 111 111</a></li>
   </ul>
   </header>
 
-      <div class="portfolio-nav-bar">
+      <div class="portfolio-navbar">
         <button class="portfolio-nav-button" type="button">Wszystkie</button>
         <button class="portfolio-nav-button" type="button">Strony</button>
         <button class="portfolio-nav-button" type="button">Aplikacje</button>
@@ -34,7 +37,7 @@
         <button class="portfolio-nav-button" type="button">Marketing</button>
       </div>
 
-      <main>
+      <main class="portfolio-main-section container">
         <ul class="portfolio-image-list">
         <li>
         <img src="images/img3_1.jpg" width="370" height="294" alt="laptop">
@@ -85,10 +88,13 @@
       </main>
 
       <footer class="main-footer">
-        <a class="footer-logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
-        <address class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</address>
-        <a class="footer-contact" href="mailto:info@example.com">info@example.com</a><br>
-        <a class="footer-contact" href="tel:+48111111111">+48 111 111 111</a>
-      </footer>
+        <div class="footer-container container">
+          <a class="footer-logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
+          <address class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <div class="footer-contact-container">
+          <a class="footer-contact" href="mailto:info@example.com">info@example.com</a><br>
+          <a class="footer-contact" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
+        </footer>
 </body>
 </html>
