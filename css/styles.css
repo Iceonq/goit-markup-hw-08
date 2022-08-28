@@ -7,6 +7,7 @@ body{
 .container{
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 .main-header{
@@ -214,6 +215,9 @@ color: #757575;
 .portfolio-navbar{
     text-align: center;
     padding: 94px 0 50px 0;
+    display: flex;
+    gap:9px;
+    justify-content: center;
 }
 
 .portfolio-nav-button{
@@ -223,6 +227,7 @@ background: #F5F4FA;
 border-radius: 4px;
 border-color: #F5F4FA;
 cursor:pointer;
+border-style: solid;
 }
 
 .portfolio-nav-button:hover{
@@ -235,12 +240,12 @@ cursor:pointer;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:25px;
     padding: 0;
 }
 
 .portfolio-image-list li{
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-image-list h3{
@@ -288,6 +293,7 @@ line-height: 1.193;
     line-height:1.71;
     letter-spacing: 0.03em;
     margin:20px 0 0 0;
+    font-style: normal;
 }
 
 .footer-contact:hover{
