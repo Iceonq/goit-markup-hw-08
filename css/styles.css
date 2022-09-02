@@ -109,7 +109,7 @@ body {
 }
 
 .first-section {
-  background: url(/images/section_background.jpg);
+  background: url(images/section_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
