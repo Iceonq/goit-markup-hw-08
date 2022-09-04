@@ -37,7 +37,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.nav-address:hover {
+.header-icon {
+  fill: #757575;
+}
+
+.nav-address:hover .header-icon:hover {
   fill: #2196f3;
 }
 
@@ -85,6 +89,10 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-phone-number {
@@ -96,12 +104,10 @@ body {
   text-decoration: none;
 }
 
-.nav-links a:hover {
-  color: #2196f3;
-}
-
+.nav-address:hover,
 .nav-links a:focus {
   color: #2196f3;
+  fill: #2196f3;
 }
 
 .section {
@@ -109,7 +115,7 @@ body {
 }
 
 .first-section {
-  background: url(/images/section_background.jpg);
+  background: url(../images/section_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -232,7 +238,7 @@ body {
 .fourth-section-icons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 10px;
   margin: 0 0 42px 0;
 }
 
@@ -242,6 +248,21 @@ body {
   gap: 30px;
   padding: 0;
   justify-content: center;
+}
+
+.icon-fourth-section {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.icon-fourth-section:hover,
+.icon-fourth-section:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+  cursor: pointer;
 }
 
 .fifth-container {
@@ -260,6 +281,17 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.icon-fifth-section {
+  fill: #757575;
+}
+
+.icon-fifth-section:hover,
+.icon-fifth-section:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+  cursor: pointer;
 }
 
 .portfolio-main-section {
@@ -282,12 +314,14 @@ body {
   border-color: #f5f4fa;
   cursor: pointer;
   border-style: solid;
+  border: #2196f3;
 }
 
 .portfolio-nav-button:hover {
   background-color: #2196f3;
   color: #ffffff;
-  transition: 0.4s;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-image-list {
@@ -320,6 +354,12 @@ body {
   border-right: 1px solid #eeeeee;
 }
 
+.portfolio-image-list li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .main-footer {
   background-color: #2f303a;
   color: #ffffff;
@@ -332,6 +372,10 @@ body {
 
 .footer-card {
   width: 276px;
+}
+
+.icon-footer {
+  fill: #ffffff;
 }
 
 .footer-logo {
@@ -359,10 +403,7 @@ body {
   font-style: normal;
 }
 
-.footer-contact:hover {
-  color: #2196f3;
-}
-
+.footer-contact:hover,
 .footer-contact:focus {
   color: #2196f3;
 }
@@ -395,4 +436,10 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+.footer-joinus-container li:hover,
+.footer-joinus-container li:focus {
+  background-color: #2196f3;
+  cursor: pointer;
 }
