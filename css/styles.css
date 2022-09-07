@@ -75,6 +75,7 @@ body {
   display: flex;
   margin-right: 0;
   gap: 50px;
+  align-items: center;
 }
 
 .nav-email-container {
@@ -258,19 +259,26 @@ body {
   justify-content: center;
 }
 
-.icon-fourth-section {
+.fourth-section-icons-item svg {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
-  border-radius: 50%;
   fill: #afb1b8;
 }
 
-.icon-fourth-section:hover,
-.icon-fourth-section:focus {
+.fourth-section-icons-item:hover,
+.fourth-section-icons-item:focus {
   background-color: #2196f3;
-  fill: #ffffff;
   cursor: pointer;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.fourth-section-icons-item svg:hover,
+.fourth-section-icons-item svg:focus {
+  fill: #ffffff;
+  width: 44px;
+  height: 44px;
 }
 
 .fifth-container {
@@ -347,7 +355,6 @@ body {
   font-size: 18px;
   letter-spacing: 0.06em;
   line-height: 2;
-  margin-left: 23px;
 }
 
 .portfolio-image-list p {
@@ -355,7 +362,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 23px;
 }
 
 .portfolio-image-list img {
@@ -366,6 +372,7 @@ body {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
 }
 
 .portfolio-image-list li:hover {
