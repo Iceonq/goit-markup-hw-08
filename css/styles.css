@@ -70,6 +70,10 @@ body {
   color: #2196f3;
 }
 
+.nav-bar-item:focus {
+  color: #2196f3;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -112,6 +116,10 @@ body {
 }
 
 .nav-address:hover .header-icon {
+  fill: #2196f3;
+}
+
+.nav-address:focus .header-icon {
   fill: #2196f3;
 }
 
@@ -259,40 +267,47 @@ body {
   justify-content: center;
 }
 
-.fourth-section-icons-item svg {
+.fourth-section-icons-item {
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourth-section-icons-item svg {
   fill: #afb1b8;
 }
 
 .fourth-section-icons-item:hover,
 .fourth-section-icons-item:focus {
   background-color: #2196f3;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
 }
 
-.fourth-section-icons-item svg:hover,
-.fourth-section-icons-item svg:focus {
+.fourth-section-icons-item:hover svg,
+.fourth-section-icons-item:focus svg {
   fill: #ffffff;
-  width: 44px;
-  height: 44px;
 }
 
-.fifth-container {
+.fifth-section {
   padding-top: 94px;
 }
 
-.fifth-container-logos {
+.fifth-section-logos {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 0px 0 94px 0;
 }
 
-.fifth-container-logos svg {
+.fifth-section-logos-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifth-section-logos svg {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -393,6 +408,12 @@ body {
 
 .footer-card {
   width: 276px;
+}
+
+.icon-footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-footer {
