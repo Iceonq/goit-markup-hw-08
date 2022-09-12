@@ -66,12 +66,21 @@ body {
   color: #000000;
 }
 
-.nav-bar-item:hover {
-  color: #2196f3;
-}
-
+.nav-bar-item:hover,
 .nav-bar-item:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-underline::after {
+  content: "";
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
+  transform: translateY(29px);
+  display: block;
+  border-radius: 2px;
 }
 
 .nav-links {
@@ -113,14 +122,20 @@ body {
 .nav-address:hover,
 .nav-links a:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-address:hover .header-icon {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-address:focus .header-icon {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -167,6 +182,8 @@ body {
   color: #000000;
   transition: 0.4s;
   border-color: #f5f4fa;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .second-section {
@@ -217,10 +234,27 @@ body {
   margin-bottom: 50px;
 }
 
+.third-section-photo {
+  padding: 0;
+}
+
 .third-section-photo-container {
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+
+.third-section-photo-description {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  position: relative;
+  top: -74px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding: 27px 90px;
 }
 
 .fourth-section-background {
@@ -283,11 +317,15 @@ body {
 .fourth-section-icons-item:hover,
 .fourth-section-icons-item:focus {
   background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fourth-section-icons-item:hover svg,
 .fourth-section-icons-item:focus svg {
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fifth-section {
@@ -319,10 +357,54 @@ body {
 }
 
 .icon-fifth-section:hover,
-.icon-fifth-section:focus {
+.fifth-section-logos-item:focus svg {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 20%;
+}
+
+.modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-main-section {
@@ -355,14 +437,41 @@ body {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-image-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 30px;
   padding: 0;
+}
+
+.portfolio-image {
+  position: absolute;
+  overflow: hidden;
+  width: 370px;
+  color: white;
+}
+
+.portfiolio-image-animation {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  display: inline-block;
+  position: relative;
+  color: white;
+  height: 294px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 49px 45px 49px 24px;
+  line-height: 1.56;
+}
+
+.portfolio-image:hover .portfiolio-image-animation {
+  transform: translateY(0);
 }
 
 .portfolio-image-list h3 {
@@ -394,6 +503,17 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-image-hover-card {
+  position: relative;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: white;
+  width: 370px;
+  height: 294px;
+  top: -294px;
 }
 
 .main-footer {
@@ -454,6 +574,8 @@ body {
 .footer-contact:hover,
 .footer-contact:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-joinus-container {
@@ -475,7 +597,8 @@ body {
   justify-content: flex-end;
 }
 
-.footer-joinus-container li {
+.footer-joinus-container li,
+.icon-footer-item {
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
@@ -486,7 +609,9 @@ body {
 }
 
 .footer-joinus-container li:hover,
-.footer-joinus-container li:focus {
+.icon-footer-item:focus {
   background-color: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
