@@ -25,9 +25,17 @@
         >
         <nav>
           <ul class="nav-item-list">
-            <li><a class="nav-bar-item" href="index.html">Agencja</a></li>
-            <li><a class="nav-bar-item" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-bar-item" href="index.html">Kontakt</a></li>
+            <li>
+              <a class="nav-bar-item navbar-underline" href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a class="nav-bar-item" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-bar-item" href="index.html">Kontakt</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -67,7 +75,9 @@
           EFEKTYWNE ROZWIĄZANIA<br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button class="first-section-button" type="button">Zamów usługę</button>
+        <button class="first-section-button" data-modal-open type="button">
+          Zamów usługę
+        </button>
       </section>
 
       <section class="second-section container">
@@ -129,9 +139,34 @@
       <section class="third-section container section">
         <h2 class="third-section-header">Czym się zajmujemy</h2>
         <div class="third-section-photo-container">
-          <img alt="coding" src="images/img1_1.jpg" width="370" height="294" />
-          <img alt="phone" src="images/img1_2.jpg" width="370" height="294" />
-          <img alt="tablet" src="images/img1_3.jpg" width="370" height="294" />
+          <figure class="third-section-photo">
+            <img alt="coding" src="images/img1_1.jpg" width="370" />
+            <figcaption class="third-section-photo-description">
+              APLIKACJE INTERNETOWE
+            </figcaption>
+          </figure>
+          <figure class="third-section-photo">
+            <img
+              alt="coding"
+              src="images/img1_2.jpg"
+              width="370"
+              height="294"
+            />
+            <figcaption class="third-section-photo-description">
+              APLIKACJE MOBILNE
+            </figcaption>
+          </figure>
+          <figure class="third-section-photo">
+            <img
+              alt="coding"
+              src="images/img1_3.jpg"
+              width="370"
+              height="294"
+            />
+            <figcaption class="third-section-photo-description">
+              ROZWIĄZANIA GRAFICZNE
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -463,5 +498,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-modalx"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
