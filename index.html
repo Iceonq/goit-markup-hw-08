@@ -26,7 +26,9 @@
         <nav>
           <ul class="nav-item-list">
             <li>
-              <a class="nav-bar-item navbar-underline" href="index.html"
+              <a
+                class="nav-bar-item navbar-underline navbar-active"
+                href="index.html"
                 >Agencja</a
               >
             </li>
@@ -496,17 +498,91 @@
             </li>
           </ul>
         </div>
+        <div class="footer-newsletter-container">
+          <h5 class="footer-email-text">ZAPISZ SIĘ DO NEWSLETTERA</h5>
+          <label class="footer-email-container">
+            <input type="text" class="footer-email-input" name="footer-email" placeholder="E-mail">
+            <button type="sumbit" class="footer-email-button" href="#">Zapisz się
+              <svg class="footer-icon-email" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
-          <svg width="11" height="11">
-            <use href="./images/icons.svg#icon-modalx"></use>
-          </svg>
+          <svg class="modal-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-modalx"></use>
+        </svg>
         </button>
+        <div class="modal-container">
+          <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
+          <form class="modal-form">
+            <ul class="modal-item-list">
+              <li>
+                <label> 
+                  Imie<br />
+                  <svg class="modal-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                  <input class="modal-input" type="text" name="first-name"/>
+
+                  
+                </label>
+              </li>
+              <li>
+                <label>
+                  Telefon<br />
+                  <svg class="modal-icon" width="13" height="13">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <input class="modal-input" type="text" name="phone-number" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  
+                  Email <br />
+                  <svg class="modal-icon" width="15" height="12">
+                    <use href="./images/icons.svg#icon-mail2"></use>
+                  </svg>
+                  <input class="modal-input" type="text" name="email" />
+                </label>
+              </li>
+              <li>
+                <label
+                  >Komentarz<br /><textarea
+                    class="modal-input modal-textarea"
+                    placeholder="Wprowadź tekst"
+                    name="comment"
+                    rows="5"
+                    resize="none"
+                  ></textarea>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox-container">
+                  <input type="checkbox" class="modal-checkbox" name="rules-agreement" />
+                  <span class="checkbox-custom">
+                    <svg class="modal-checkbox-icon" width="11" height="8">
+                    <use href="./images/icons.svg#icon-tick">
+                    </use>
+                    </svg>
+                  </span>
+                  <div class="checkbox-text">Oświadczam iż akceptuję <span class="modal-checkbox-span-text">Regulamin</span> i <span class="modal-checkbox-span-text">Politykę Prywatności.</span></div>
+                </label>
+              </li>
+              <li>
+                <button type="sumbit" class="modal-button-submit">Wyślij</a>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
