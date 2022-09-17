@@ -451,11 +451,11 @@ body {
 
 .modal-icon {
   position: absolute;
-  margin: 16px;
+  margin: 18px 16px;
 }
 
 .modal-input {
-  padding: 12px 0;
+  padding: 12px 42px;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
