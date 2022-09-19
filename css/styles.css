@@ -233,6 +233,10 @@ body {
   padding-top: 10px;
 }
 
+.third-section {
+  padding-bottom: 20px;
+}
+
 .third-section-header {
   font-weight: 700;
   font-size: 36px;
@@ -387,7 +391,6 @@ body {
 
 .modal {
   width: 528px;
-  height: 581px;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -477,6 +480,7 @@ body {
   margin-bottom: 20px;
   padding: 12px 16px;
   height: 120px;
+  resize: none;
 }
 
 .modal-checkbox {
@@ -511,7 +515,6 @@ body {
 .checkbox-container {
   display: flex;
   gap: 8px;
-  margin-top: 20px;
 }
 
 .checkbox-text {
