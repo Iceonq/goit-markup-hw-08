@@ -1,0 +1,21 @@
+.third-section {
+  padding-bottom: 20px;
+  &__photo {
+    padding: 0;
+  }
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__description {
+    width: 370px;
+    height: 70px;
+    background: $transparent-grey-color;
+    position: relative;
+    top: -74px;
+    color: $white-color;
+    @include font(14px, 700, 1.14, 0.03em);
+    padding: 27px 90px;
+  }
+}

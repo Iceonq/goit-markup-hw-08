@@ -1,0 +1,14 @@
+.logo {
+  @include font(26px, 700, 1.193, 0.03em);
+  color: $black-color;
+  text-decoration: none;
+  font-family: "Raleway";
+
+  &--white {
+    @extend .logo;
+    color: $white-color;
+  }
+  &--span {
+    color: $main-blue-color;
+  }
+}
