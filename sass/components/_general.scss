@@ -17,10 +17,10 @@ body {
 
 .section {
   padding: 94px 0 94px 0;
-}
-.section__header {
-  @include font(36px, 700, 1.167, 0.03em);
-  text-align: center;
-  padding: 0;
-  margin-bottom: 50px;
+  &__header {
+    @include font(36px, 700, 1.167, 0.03em);
+    text-align: center;
+    padding: 0;
+    margin-bottom: 50px;
+  }
 }

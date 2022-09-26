@@ -27,34 +27,37 @@
 
 .grid {
   padding-bottom: 94px;
-  &__image-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
-    & h3 {
-      @include font(18px, 700, 2, 0.06em);
-    }
-    & p {
-      @include font(16px, 400, 1.88, 0.03em);
-      color: $main-grey-color;
-    }
-    & img {
-      display: block;
-    }
-    & li:hover {
-      box-shadow: 0px 1px 1px $button-border-color,
-        0px 4px 4px $button-border-color, 1px 4px 6px $button-border-color;
-      cursor: pointer;
-      @include animation;
-    }
-  }
   &__image {
     position: absolute;
     overflow: hidden;
     width: 370px;
     color: $white-color;
+    &-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0;
+      & h3 {
+        @include font(18px, 700, 2, 0.06em);
+      }
+      & p {
+        @include font(16px, 400, 1.88, 0.03em);
+        color: $main-grey-color;
+      }
+      & img {
+        display: block;
+      }
+      & li:hover {
+        box-shadow: 0px 1px 1px $button-border-color,
+          0px 4px 4px $button-border-color, 1px 4px 6px $button-border-color;
+        cursor: pointer;
+        @include animation;
+        & .grid__animation {
+          transform: translateY(0);
+        }
+      }
+    }
   }
   &__animation {
     @include animation;
@@ -67,13 +70,11 @@
     padding: 49px 45px 49px 24px;
     @include font(18px, 400, 1.56, 0.03em);
   }
-  &__image-list li:hover &__animation {
-    transform: translateY(0);
-  }
+
   &__card--bottom {
-    border-left: 1px solid $white-color;
-    border-bottom: 1px solid $white-color;
-    border-right: 1px solid $white-color;
+    border-left: 1px solid $portfolio-card-border-color;
+    border-bottom: 1px solid $portfolio-card-border-color;
+    border-right: 1px solid $portfolio-card-border-color;
     padding: 20px 24px 20px 24px;
   }
 }

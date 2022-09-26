@@ -50,6 +50,9 @@
     & label {
       color: $main-grey-color;
       @include font(12px, 400, 1.17, 0.01em);
+      &:focus-within {
+        fill: $main-blue-color;
+      }
     }
   }
   &__container {
@@ -70,10 +73,6 @@
       border-color: $main-blue-color;
       outline: none;
     }
-  }
-
-  &__item-list & label:focus-within {
-    fill: $main-blue-color;
   }
 
   &__textarea {
@@ -101,6 +100,11 @@
   gap: 8px;
   &__input {
     display: none;
+    &:checked + .checkbox__custom {
+      fill: $white-color;
+      background-color: $main-blue-color;
+      border-color: $main-blue-color;
+    }
   }
   &__custom {
     width: 16px;
