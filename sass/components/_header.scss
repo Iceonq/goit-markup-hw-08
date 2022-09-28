@@ -7,6 +7,9 @@
     align-items: center;
     gap: 94px;
   }
+  &__border {
+    border-bottom: 1px solid $header-border-color;
+  }
 }
 
 .navigation {

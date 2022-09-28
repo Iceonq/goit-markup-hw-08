@@ -65,6 +65,9 @@ body {
           align-items: center;
   gap: 94px;
 }
+.header__border {
+  border-bottom: 1px solid #ececec;
+}
 
 .navigation__icon {
   fill: #757575;
