@@ -3,20 +3,22 @@
   color: $white-color;
   padding: 60px 0;
   &__container {
+    text-align: center;
     display: flex;
+    flex-direction: column;
     &--address {
-      width: 276px;
+      text-align: center;
     }
     &--joinus {
-      width: 276px;
       margin: 0;
-      margin-top: 12px;
+      margin-top: 60px;
+      text-align: center;
     }
     &--newsletter {
-      margin-left: 78px;
-      margin-top: 12px;
+      margin-top: 60px;
     }
   }
+
   &__item {
     @include flex(center, center);
     &-list {
@@ -24,7 +26,7 @@
       display: flex;
       gap: 10px;
       padding: 0;
-      justify-content: flex-end;
+      justify-content: center;
     }
   }
   &__icon {
@@ -36,6 +38,7 @@
     display: flex;
     @include font(14px, 400, 1.193, 0.03em);
     margin-top: 9px;
+    justify-content: center;
     &:hover,
     &:focus {
       color: $main-blue-color;
@@ -48,8 +51,8 @@
     font-style: normal;
   }
   &__header {
-    margin: 0 0 20px 55px;
     @include font(14px, 700, 1.142, 0.03em);
+    margin-bottom: 20px;
   }
 
   &__container--joinus li,
@@ -76,10 +79,12 @@
   }
   &__container {
     @include flex(center, center);
-    gap: 12px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid $newsletter-input-border-color;
@@ -104,3 +109,174 @@
     cursor: pointer;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      &--address {
+        width: 50%;
+      }
+      &--joinus {
+        width: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &--newsletter {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &--address {
+        text-align: left;
+      }
+      &--joinus {
+        margin-top: 12px;
+        margin-left: 70px;
+      }
+      &--newsletter {
+        margin-top: 12px;
+        justify-content: flex-start;
+      }
+    }
+    &__contact {
+      justify-content: left;
+    }
+    &__header {
+      text-align: left;
+    }
+  }
+  .newsletter {
+    &__input {
+      width: 358px;
+      height: 50px;
+    }
+    &__container {
+      flex-direction: row;
+      margin-left: 78px;
+      gap: 12px;
+    }
+    &__header {
+      text-align: left;
+      margin-left: 78px;
+    }
+  }
+}
+
+// .footer {
+//   background-color: $footer-color;
+//   color: $white-color;
+//   padding: 60px 0;
+//   &__container {
+//     display: flex;
+//     &--address {
+//       width: 276px;
+//     }
+//     &--joinus {
+//       width: 276px;
+//       margin: 0;
+//       margin-top: 12px;
+//     }
+//     &--newsletter {
+//       margin-left: 78px;
+//       margin-top: 12px;
+//     }
+//   }
+//   &__item {
+//     @include flex(center, center);
+//     &-list {
+//       list-style: none;
+//       display: flex;
+//       gap: 10px;
+//       padding: 0;
+//       justify-content: flex-end;
+//     }
+//   }
+//   &__icon {
+//     fill: $white-color;
+//   }
+//   &__contact {
+//     text-decoration: none;
+//     color: $footer-text-color;
+//     display: flex;
+//     @include font(14px, 400, 1.193, 0.03em);
+//     margin-top: 9px;
+//     &:hover,
+//     &:focus {
+//       color: $main-blue-color;
+//       @include animation;
+//     }
+//   }
+//   &__address {
+//     @include font(14px, 400, 1.171, 0.03em);
+//     margin: 20px 0 0 0;
+//     font-style: normal;
+//   }
+//   &__header {
+//     margin: 0 0 20px 55px;
+//     @include font(14px, 700, 1.142, 0.03em);
+//   }
+
+//   &__container--joinus li,
+//   &__item {
+//     background: $footer-icon-background;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//   }
+
+//   &__container--joinus li:hover,
+//   &__item:focus {
+//     background-color: $main-blue-color;
+//     cursor: pointer;
+//     @include animation;
+//   }
+// }
+
+// .newsletter {
+//   &__header {
+//     color: $white-color;
+//     margin-bottom: 20px;
+//     @include font(14px, 700, 1.14, 0.03em);
+//   }
+//   &__container {
+//     @include flex(center, center);
+//     gap: 12px;
+//   }
+//   &__input {
+//     width: 358px;
+//     height: 50px;
+//     background-color: transparent;
+//     border: 1px solid $newsletter-input-border-color;
+//     border-radius: 4px;
+//     color: $footer-text-color;
+//     padding: 15px;
+//     &:focus-within {
+//       border-color: $main-blue-color;
+//       outline: none;
+//     }
+//   }
+//   &__button {
+//     width: 200px;
+//     height: 50px;
+//     background-color: $main-blue-color;
+//     fill: $white-color;
+//     color: $white-color;
+//     border: none;
+//     border-radius: 4px;
+//     @include flex(center, center);
+//     gap: 24px;
+//     cursor: pointer;
+//   }
+// }

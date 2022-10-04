@@ -1,11 +1,12 @@
 .navbar {
   text-align: center;
-  padding: 94px 0 50px 0;
+  padding: 60px 15px 40px 15px;
   display: flex;
   gap: 9px;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   &__button {
-    padding: 6px 22px 6px 22px;
+    padding: 6px 33px;
     height: 38px;
     background: $inner-white-color;
     border-radius: 4px;
@@ -26,20 +27,25 @@
 }
 
 .grid {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   &__image {
     position: absolute;
     overflow: hidden;
-    width: 370px;
+    width: 450px;
     color: $white-color;
+
     &-list {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
       padding: 0;
+      justify-content: center;
       & h3 {
         @include font(18px, 700, 2, 0.06em);
+      }
+      li {
+        width: 450px;
       }
       & p {
         @include font(16px, 400, 1.88, 0.03em);
@@ -47,6 +53,7 @@
       }
       & img {
         display: block;
+        width: 450px;
       }
       & li:hover {
         box-shadow: 0px 1px 1px $button-border-color,
@@ -76,5 +83,53 @@
     border-bottom: 1px solid $portfolio-card-border-color;
     border-right: 1px solid $portfolio-card-border-color;
     padding: 20px 24px 20px 24px;
+  }
+
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    &__image {
+      width: 354px;
+      &-list {
+        justify-content: flex-start;
+        & li {
+          width: 354px;
+        }
+        & img {
+          width: 354px;
+        }
+      }
+    }
+  }
+  .navbar {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    &__image {
+      width: 370px;
+      &-list {
+        justify-content: flex-start;
+        padding-bottom: 94px;
+        & li {
+          width: 370px;
+        }
+        & img {
+          width: 370px;
+        }
+      }
+    }
+  }
+  .navbar {
+    padding: 94px 15px 50px 15px;
+    &__button {
+      padding: 6px 22px 6px 22px;
+    }
   }
 }

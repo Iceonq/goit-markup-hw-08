@@ -23,6 +23,37 @@
         <a class="logo" href="index.html"
           ><span class="logo--span">Web</span>Studio</a
         >
+        <button class="mobile__button js-open-menu">
+          <svg class="mobile__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mobile-button"></use>
+          </svg>
+        </button>
+        <div class="mobile__container js-menu-container">
+          <button class="mobile__close js-close-menu">
+            <svg height="18" width="18">
+              <use href="./images/icons.svg#icon-modalx"></use>
+            </svg>
+          </button>
+          <div class="mobile__navigation">
+            <a href="index.html" class="mobile__item">Agencja</a>
+            <a href="portfolio.html" class="mobile__item">Portfolio</a>
+            <a href="index.html"class="mobile__item">Kontakt</a>
+          </div>
+          <div class="mobile__contact">
+            <a class="mobile__address--number" href="tel:+48111111111">
+              +48 111 111 111
+            </a>
+            <a class="mobile__address--email" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </div>
+          <div class="mobile__social-media">
+            <a href="" class="social-media__item">Instagram</a>
+            <a href="" class="social-media__item">Twitter</a>
+            <a href="" class="social-media__item">Facebook</a>
+            <a href="" class="social-media__item">LinkedIn</a>
+          </div>
+        </div>
         <nav>
           <ul class="navigation__item-list">
             <li>
@@ -39,36 +70,37 @@
               <a class="navigation__item" href="index.html">Kontakt</a>
             </li>
           </ul>
+          </div>
         </nav>
       </div>
-      <ul class="navigation__links">
-        <li>
-          <div class="navigation__container--email">
-            <a class="navigation__address" href="mailto:info@devstudio.com">
-              <svg class="navigation__icon" width="16" height="15">
+        <ul class="navigation__links">
+          <li>
+            <div class="navigation__container--email">
+              <a class="navigation__address" href="mailto:info@devstudio.com">
+                <svg class="navigation__icon" width="16" height="15">
+                  <use
+                    width="16"
+                    height="12"
+                    xlink:href="./images/icons.svg#icon-envelope"
+                  ></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+          </li>
+          <li>
+            <a class="navigation__address" href="tel:+48111111111">
+              <svg class="navigation__icon" width="10" height="20">
                 <use
-                  width="16"
-                  height="12"
-                  xlink:href="./images/icons.svg#icon-envelope"
+                  width="10"
+                  height="16"
+                  href="./images/icons.svg#icon-phonebook"
                 ></use>
               </svg>
-              info@devstudio.com
+              +48 111 111 111
             </a>
-          </div>
-        </li>
-        <li>
-          <a class="navigation__address" href="tel:+48111111111">
-            <svg class="navigation__icon" width="10" height="20">
-              <use
-                width="10"
-                height="16"
-                href="./images/icons.svg#icon-phonebook"
-              ></use>
-            </svg>
-            +48 111 111 111
-          </a>
-        </li>
-      </ul>
+          </li>
+        </ul>
     </header>
     <div class="header__border"></div>
     <main>
@@ -180,8 +212,7 @@
               <img
                 alt="smiling-man"
                 src="images/img2_1.jpg"
-                width="270"
-                height="260"
+                srcset="/images/img2_1x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>Product Designer</p>
@@ -228,8 +259,7 @@
               <img
                 alt="smiling-woman"
                 src="images/img2_2.jpg"
-                width="270"
-                height="260"
+                srcset="/images/img2_2x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>Frontend Developer</p>
@@ -276,8 +306,7 @@
               <img
                 alt="smiling-man"
                 src="images/img2_3.jpg"
-                width="270"
-                height="260"
+                srcset="/images/img2_3x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>Marketing</p>
@@ -324,8 +353,7 @@
               <img
                 alt="happy-man"
                 src="images/img2_4.jpg"
-                width="270"
-                height="260"
+                srcset="/images/img2_4x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>UI Designer</p>
@@ -373,14 +401,14 @@
       </section>
       <section class="fifth-section">
         <h2 class="section__header">Nasi Klienci</h2>
-        <div class="fifth-section__container">
+        <div class="fifth-section__container container">
           <a class="fifth-section__item" href="#">
             <svg class="fifth-section__icon">
               <use
                 width="106"
                 height="60"
-                x="32"
-                y="16"
+                x="22%"
+                y="18%"
                 href="./images/icons.svg#icon-logo"
               ></use>
             </svg>
@@ -390,8 +418,8 @@
               <use
                 width="106"
                 height="60"
-                x="32"
-                y="16"
+                x="22%"
+                y="18%"
                 href="./images/icons.svg#icon-logo1"
               ></use>
             </svg>
@@ -401,8 +429,8 @@
               <use
                 width="106"
                 height="60"
-                x="32"
-                y="16"
+                x="22%"
+                y="18%"
                 href="./images/icons.svg#icon-logo2"
               ></use>
             </svg>
@@ -412,8 +440,8 @@
               <use
                 width="106"
                 height="60"
-                x="32"
-                y="16"
+                x="22%"
+                y="18%"
                 href="./images/icons.svg#icon-logo3"
               ></use>
             </svg>
@@ -423,8 +451,8 @@
               <use
                 width="106"
                 height="60"
-                x="32"
-                y="16"
+                x="22%"
+                y="18%"
                 href="./images/icons.svg#icon-logo4"
               ></use>
             </svg>
@@ -434,8 +462,8 @@
               <use
                 width="106"
                 height="60"
-                x="32"
-                y="16"
+                x="22%"
+                y="18%"
                 href="./images/icons.svg#icon-logo5"
               ></use>
             </svg>
@@ -594,5 +622,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

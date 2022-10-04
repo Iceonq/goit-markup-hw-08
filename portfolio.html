@@ -23,52 +23,84 @@
         <a class="logo" href="index.html"
           ><span class="logo--span">Web</span>Studio</a
         >
+        <button class="mobile__button js-open-menu">
+          <svg class="mobile__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mobile-button"></use>
+          </svg>
+        </button>
+        <div class="mobile__container js-menu-container">
+          <button class="mobile__close js-close-menu">
+            <svg height="18" width="18">
+              <use href="./images/icons.svg#icon-modalx"></use>
+            </svg>
+          </button>
+          <div class="mobile__navigation">
+            <a href="index.html" class="mobile__item">Agencja</a>
+            <a href="portfolio.html" class="mobile__item">Portfolio</a>
+            <a href="index.html"class="mobile__item">Kontakt</a>
+          </div>
+          <div class="mobile__contact">
+            <a class="mobile__address--number" href="tel:+48111111111">
+              +48 111 111 111
+            </a>
+            <a class="mobile__address--email" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </div>
+          <div class="mobile__social-media">
+            <a href="" class="social-media__item">Instagram</a>
+            <a href="" class="social-media__item">Twitter</a>
+            <a href="" class="social-media__item">Facebook</a>
+            <a href="" class="social-media__item">LinkedIn</a>
+          </div>
+        </div>
         <nav>
           <ul class="navigation__item-list">
             <li>
-              <a class="navigation__item" href="index.html">Agencja</a>
+              <a
+                class="navigation__item "
+                href="index.html"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a
-                class="navigation__item navigation__underline navigation__item--active"
-                href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navigation__item navigation__underline navigation__item--active" href="portfolio.html">Portfolio</a>
             </li>
             <li>
               <a class="navigation__item" href="index.html">Kontakt</a>
             </li>
           </ul>
+          </div>
         </nav>
       </div>
-      <ul class="navigation__links">
-        <li>
-          <div class="navigation__container--email">
-            <a class="navigation__address" href="mailto:info@devstudio.com">
-              <svg class="navigation__icon" width="16" height="15">
+        <ul class="navigation__links">
+          <li>
+            <div class="navigation__container--email">
+              <a class="navigation__address" href="mailto:info@devstudio.com">
+                <svg class="navigation__icon" width="16" height="15">
+                  <use
+                    width="16"
+                    height="12"
+                    xlink:href="./images/icons.svg#icon-envelope"
+                  ></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+          </li>
+          <li>
+            <a class="navigation__address" href="tel:+48111111111">
+              <svg class="navigation__icon" width="10" height="20">
                 <use
-                  width="16"
-                  height="12"
-                  xlink:href="./images/icons.svg#icon-envelope"
+                  width="10"
+                  height="16"
+                  href="./images/icons.svg#icon-phonebook"
                 ></use>
               </svg>
-              info@devstudio.com
+              +48 111 111 111
             </a>
-          </div>
-        </li>
-        <li>
-          <a class="navigation__address" href="tel:+48111111111">
-            <svg class="navigation__icon" width="10" height="20">
-              <use
-                width="10"
-                height="16"
-                href="./images/icons.svg#icon-phonebook"
-              ></use>
-            </svg>
-            +48 111 111 111
-          </a>
-        </li>
-      </ul>
+          </li>
+        </ul>
     </header>
     <div class="header__border"></div>
     <div class="navbar container">
@@ -90,7 +122,8 @@
               konkurencji
             </div>
           </div>
-          <img src="images/img3_1.jpg" width="370" height="294" alt="laptop" />
+          <img src="images/img3_1.jpg" width="370" height="294" alt="laptop"
+          srcset="/images/img3_1x2.jpg 2x" />
           <div class="grid__card--bottom">
             <h3>Technocrack</h3>
             <p>Strona internetowa</p>
@@ -110,6 +143,7 @@
             width="370"
             height="294"
             alt="basketball-players"
+            srcset="/images/img3_2x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Grafika New Orlean vs Golden Star</h3>
@@ -130,6 +164,7 @@
             width="370"
             height="294"
             alt="seafood-logo"
+            srcset="/images/img3_3x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Restauracja Seafood</h3>
@@ -150,6 +185,7 @@
             width="370"
             height="294"
             alt="headphones"
+            srcset="/images/img3_4x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Projekt Prime</h3>
@@ -170,6 +206,7 @@
             width="370"
             height="294"
             alt="two-boxes"
+            srcset="/images/img3_5x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Projekt Boxes</h3>
@@ -185,7 +222,8 @@
               konkurencji
             </div>
           </div>
-          <img src="images/img3_6.jpg" width="370" height="294" alt="monitor" />
+          <img src="images/img3_6.jpg" width="370" height="294" alt="monitor"
+          srcset="/images/img3_6x2.jpg 2x" />
           <div class="grid__card--bottom">
             <h3>Inspiration has no Borders</h3>
             <p>Strona internetowa</p>
@@ -200,7 +238,8 @@
               konkurencji
             </div>
           </div>
-          <img src="images/img3_7.jpg" width="370" height="294" alt="book" />
+          <img src="images/img3_7.jpg" width="370" height="294" alt="book"
+          srcset="/images/img3_7x2.jpg 2x" />
           <div class="grid__card--bottom">
             <h3>Magazyn Limited Edition</h3>
             <p>Dizajn</p>
@@ -220,6 +259,7 @@
             width="370"
             height="294"
             alt="bookmark"
+            srcset="/images/img3_8x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Projekt LAB</h3>
@@ -240,6 +280,7 @@
             width="370"
             height="294"
             alt="typing-on-laptop"
+            srcset="/images/img3_9x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Growing Business</h3>
@@ -322,5 +363,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

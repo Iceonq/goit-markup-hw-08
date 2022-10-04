@@ -1,22 +1,26 @@
 .fifth-section {
-  padding-top: 94px;
+  padding-top: 60px;
   &__container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
-    padding: 0px 0 94px 0;
+    padding-bottom: 60px;
     & svg {
-      width: 170px;
+      width: 210px;
       height: 92px;
       border: 1px solid $icon-grey-color;
       border-radius: 4px;
     }
   }
   &__item {
-    @include flex(center, center);
+    display: block;
+    margin: auto;
   }
   &__icon {
     fill: $icon-grey-color;
+    position: relative;
   }
   &__icon:hover,
   &__item:focus svg {
@@ -26,3 +30,67 @@
     @include animation;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .fifth-section {
+    &__container {
+      & svg {
+        width: 226px;
+        height: 92px;
+      }
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fifth-section {
+    padding-top: 94px;
+    &__container {
+      padding-bottom: 94px;
+      & svg {
+        width: 170px;
+        height: 92px;
+      }
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: calc((100% - 150px) / 6);
+    }
+  }
+}
+
+// .fifth-section {
+//   padding-top: 94px;
+//   &__container {
+//     display: flex;
+//     justify-content: center;
+//     gap: 30px;
+//     padding: 0px 0 94px 0;
+//     & svg {
+//       width: 170px;
+//       height: 92px;
+//       border: 1px solid $icon-grey-color;
+//       border-radius: 4px;
+//     }
+//   }
+//   &__item {
+//     @include flex(center, center);
+//   }
+//   &__icon {
+//     fill: $icon-grey-color;
+//   }
+//   &__icon:hover,
+//   &__item:focus svg {
+//     fill: $main-blue-color;
+//     border-color: $main-blue-color;
+//     cursor: pointer;
+//     @include animation;
+//   }
+// }
