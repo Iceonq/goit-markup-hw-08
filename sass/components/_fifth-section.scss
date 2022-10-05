@@ -65,32 +65,3 @@
     }
   }
 }
-
-// .fifth-section {
-//   padding-top: 94px;
-//   &__container {
-//     display: flex;
-//     justify-content: center;
-//     gap: 30px;
-//     padding: 0px 0 94px 0;
-//     & svg {
-//       width: 170px;
-//       height: 92px;
-//       border: 1px solid $icon-grey-color;
-//       border-radius: 4px;
-//     }
-//   }
-//   &__item {
-//     @include flex(center, center);
-//   }
-//   &__icon {
-//     fill: $icon-grey-color;
-//   }
-//   &__icon:hover,
-//   &__item:focus svg {
-//     fill: $main-blue-color;
-//     border-color: $main-blue-color;
-//     cursor: pointer;
-//     @include animation;
-//   }
-// }

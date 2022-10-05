@@ -23,6 +23,7 @@
         <a class="logo" href="index.html"
           ><span class="logo--span">Web</span>Studio</a
         >
+        <!-- Nawigacja dla urządzeń mobilnych -->
         <button class="mobile__button js-open-menu">
           <svg class="mobile__icon" width="24" height="16">
             <use href="./images/icons.svg#icon-mobile-button"></use>
@@ -36,7 +37,7 @@
           </button>
           <div class="mobile__navigation">
             <a href="index.html" class="mobile__item">Agencja</a>
-            <a href="portfolio.html" class="mobile__item">Portfolio</a>
+            <a href="portfolio.html" class="mobile__item mobile__item--active">Portfolio</a>
             <a href="index.html"class="mobile__item">Kontakt</a>
           </div>
           <div class="mobile__contact">
@@ -73,6 +74,7 @@
           </div>
         </nav>
       </div>
+      <!-- Nawigacja dla urządzeń 768px + -->
         <ul class="navigation__links">
           <li>
             <div class="navigation__container--email">
@@ -102,7 +104,8 @@
           </li>
         </ul>
     </header>
-    <div class="header__border"></div>
+    <div class="header__border mobile__border"></div>
+    <!-- Nawigacja dla strony portfolio -->
     <div class="navbar container">
       <button class="navbar__button" type="button">Wszystkie</button>
       <button class="navbar__button" type="button">Strony</button>
@@ -111,6 +114,7 @@
       <button class="navbar__button" type="button">Marketing</button>
     </div>
 
+    <!-- Siatka obrazków strony portfolio -->
     <main class="grid container">
       <ul class="grid__image-list">
         <li>
@@ -123,7 +127,7 @@
             </div>
           </div>
           <img src="images/img3_1.jpg" width="370" height="294" alt="laptop"
-          srcset="./images/img3_1x2.jpg 2x" />
+          srcset="/images/img3_1x2.jpg 2x" />
           <div class="grid__card--bottom">
             <h3>Technocrack</h3>
             <p>Strona internetowa</p>
@@ -139,11 +143,11 @@
             </div>
           </div>
           <img
-            src="./images/img3_2.jpg"
+            src="images/img3_2.jpg"
             width="370"
             height="294"
             alt="basketball-players"
-            srcset="./images/img3_2x2.jpg 2x"
+            srcset="/images/img3_2x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Grafika New Orlean vs Golden Star</h3>
@@ -164,7 +168,7 @@
             width="370"
             height="294"
             alt="seafood-logo"
-            srcset="./images/img3_3x2.jpg 2x"
+            srcset="/images/img3_3x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Restauracja Seafood</h3>
@@ -185,7 +189,7 @@
             width="370"
             height="294"
             alt="headphones"
-            srcset="./images/img3_4x2.jpg 2x"
+            srcset="/images/img3_4x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Projekt Prime</h3>
@@ -206,7 +210,7 @@
             width="370"
             height="294"
             alt="two-boxes"
-            srcset="./images/img3_5x2.jpg 2x"
+            srcset="/images/img3_5x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Projekt Boxes</h3>
@@ -223,7 +227,7 @@
             </div>
           </div>
           <img src="images/img3_6.jpg" width="370" height="294" alt="monitor"
-          srcset="./images/img3_6x2.jpg 2x" />
+          srcset="/images/img3_6x2.jpg 2x" />
           <div class="grid__card--bottom">
             <h3>Inspiration has no Borders</h3>
             <p>Strona internetowa</p>
@@ -239,7 +243,7 @@
             </div>
           </div>
           <img src="images/img3_7.jpg" width="370" height="294" alt="book"
-          srcset="./images/img3_7x2.jpg 2x" />
+          srcset="/images/img3_7x2.jpg 2x" />
           <div class="grid__card--bottom">
             <h3>Magazyn Limited Edition</h3>
             <p>Dizajn</p>
@@ -259,7 +263,7 @@
             width="370"
             height="294"
             alt="bookmark"
-            srcset="./images/img3_8x2.jpg 2x"
+            srcset="/images/img3_8x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Projekt LAB</h3>
@@ -280,7 +284,7 @@
             width="370"
             height="294"
             alt="typing-on-laptop"
-            srcset="./images/img3_9x2.jpg 2x"
+            srcset="/images/img3_9x2.jpg 2x"
           />
           <div class="grid__card--bottom">
             <h3>Growing Business</h3>
@@ -290,6 +294,7 @@
       </ul>
     </main>
 
+    <!-- Stopka strony -->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__container--address">

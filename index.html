@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalizator stylu -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <!-- Podłączenie css -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Podłączenie czcionek -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +26,7 @@
         <a class="logo" href="index.html"
           ><span class="logo--span">Web</span>Studio</a
         >
+        <!-- Nawigacja dla urządzeń mobilnych -->
         <button class="mobile__button js-open-menu">
           <svg class="mobile__icon" width="24" height="16">
             <use href="./images/icons.svg#icon-mobile-button"></use>
@@ -35,7 +39,8 @@
             </svg>
           </button>
           <div class="mobile__navigation">
-            <a href="index.html" class="mobile__item">Agencja</a>
+            <a href="index.html" class="mobile__item mobile__item--active"
+            href="index.html">Agencja</a>
             <a href="portfolio.html" class="mobile__item">Portfolio</a>
             <a href="index.html"class="mobile__item">Kontakt</a>
           </div>
@@ -73,6 +78,7 @@
           </div>
         </nav>
       </div>
+      <!-- Nawigacja dla urządzeń 768px + -->
         <ul class="navigation__links">
           <li>
             <div class="navigation__container--email">
@@ -104,6 +110,7 @@
     </header>
     <div class="header__border"></div>
     <main>
+      <!-- Sekcja pierwsza z przyciskiem aktywującym modal -->
       <section class="first-section section">
         <h1 class="first-section__header">
           EFEKTYWNE ROZWIĄZANIA<br />
@@ -113,7 +120,7 @@
           Zamów usługę
         </button>
       </section>
-
+      <!-- Druga sekcja, lorem ipsum -->
       <section class="second-section container">
         <ul class="second-section__item-list">
           <li>
@@ -170,11 +177,13 @@
         </ul>
       </section>
 
+      <!-- Trzecia sekcja, czym się zajmujemy -->
       <section class="third-section container section">
         <h2 class="section__header">Czym się zajmujemy</h2>
         <div class="third-section__container">
           <figure class="third-section__photo">
-            <img alt="coding" src="images/img1_1.jpg" width="370" />
+            <img alt="coding" src="images/img1_1.jpg" width="370"
+            srcset="../images/img1_1x2.jpg 2x" />
             <figcaption class="third-section__description">
               APLIKACJE INTERNETOWE
             </figcaption>
@@ -185,6 +194,7 @@
               src="images/img1_2.jpg"
               width="370"
               height="294"
+              srcset="../images/img1_2x2.jpg 2x"
             />
             <figcaption class="third-section__description">
               APLIKACJE MOBILNE
@@ -196,6 +206,7 @@
               src="images/img1_3.jpg"
               width="370"
               height="294"
+              srcset="../images/img1_3x2.jpg 2x"
             />
             <figcaption class="third-section__description">
               ROZWIĄZANIA GRAFICZNE
@@ -204,6 +215,7 @@
         </div>
       </section>
 
+      <!-- Czwarta sekcja, nasz zespół -->
       <section class="fourth-section section">
         <div class="fourth-section container">
           <h2 class="section__header">Nasz zespół</h2>
@@ -212,7 +224,7 @@
               <img
                 alt="smiling-man"
                 src="images/img2_1.jpg"
-                srcset="./images/img2_1x2.jpg 2x"
+                srcset="/images/img2_1x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>Product Designer</p>
@@ -259,7 +271,7 @@
               <img
                 alt="smiling-woman"
                 src="images/img2_2.jpg"
-                srcset="./images/img2_2x2.jpg 2x"
+                srcset="/images/img2_2x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>Frontend Developer</p>
@@ -306,7 +318,7 @@
               <img
                 alt="smiling-man"
                 src="images/img2_3.jpg"
-                srcset="./images/img2_3x2.jpg 2x"
+                srcset="/images/img2_3x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>Marketing</p>
@@ -353,7 +365,7 @@
               <img
                 alt="happy-man"
                 src="images/img2_4.jpg"
-                srcset="./images/img2_4x2.jpg 2x"
+                srcset="/images/img2_4x2.jpg 2x"
               />
               <h3>John Doe</h3>
               <p>UI Designer</p>
@@ -399,6 +411,7 @@
           </ul>
         </div>
       </section>
+      <!-- Piąta sekcja, nasi klienci -->
       <section class="fifth-section">
         <h2 class="section__header">Nasi Klienci</h2>
         <div class="fifth-section__container container">
@@ -472,6 +485,7 @@
       </section>
     </main>
 
+    <!-- Stopka strony -->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__container--address">
@@ -544,6 +558,7 @@
         </div>
       </div>
     </footer>
+    <!-- Okno modalne -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button" data-modal-close>
@@ -621,6 +636,7 @@
         </div>
       </div>
     </div>
+    <!-- Podłączenie skryptów .js -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

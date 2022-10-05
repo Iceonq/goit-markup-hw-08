@@ -456,7 +456,7 @@ body {
   line-height: 1.142;
   letter-spacing: 0.03em;
   padding-top: 30px;
-  text-align: center;
+  text-align: left;
 }
 .second-section p {
   font-size: 14px;
@@ -912,10 +912,10 @@ body {
   border-color: #2196f3;
 }
 .checkbox__text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.166;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
 }
 .checkbox__span {
   color: #2196f3;
@@ -935,10 +935,16 @@ body {
   .modal__input {
     width: 448px;
   }
+  .checkbox__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
 }
 .navbar {
   text-align: center;
-  padding: 60px 15px 40px 15px;
+  padding: 60px 15px 0px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,7 +981,7 @@ body {
 }
 
 .grid {
-  padding-bottom: 60px;
+  padding: 40px 0 60px 0;
 }
 .grid__image {
   position: absolute;
@@ -1048,10 +1054,11 @@ body {
   letter-spacing: 0.03em;
 }
 .grid__card--bottom {
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
+}
+.grid__card--bottom:nth-child(1) {
+  padding-bottom: 56px;
+  color: 0;
 }
 .grid .header {
   border-bottom: 1px solid #ececec;
@@ -1065,9 +1072,11 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-left: 15px;
   }
   .grid__image-list li {
     width: 354px;
+    border: 1px solid #eeeeee;
   }
   .grid__image-list img {
     width: 354px;
@@ -1285,9 +1294,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .footer__container--newsletter {
     width: 100%;
@@ -1402,6 +1408,9 @@ body {
 .mobile__item:hover {
   color: #2196f3;
 }
+.mobile__item--active {
+  color: #2196f3;
+}
 .mobile__close {
   background-color: transparent;
   cursor: pointer;
@@ -1461,6 +1470,9 @@ body {
 }
 .mobile__social-media a:nth-child(4) {
   border: none;
+}
+.mobile__border {
+  border-bottom: 1px solid #ececec;
 }
 
 .is-open {
