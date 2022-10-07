@@ -115,11 +115,6 @@
     @include flex(center, center);
     fill: $white-color;
   }
-  &__input:checked + &__custom {
-    fill: $white-color;
-    background-color: $main-blue-color;
-    border-color: $main-blue-color;
-  }
   &__text {
     @include font(12px, 400, 1.166, 0.03em);
   }

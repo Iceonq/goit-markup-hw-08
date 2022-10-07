@@ -21,7 +21,7 @@
   & h3 {
     @include font(14px, 700, 1.142, 0.03em);
     padding-top: 30px;
-    text-align: left;
+    text-align: center;
   }
   & p {
     @include font(14px, 400, 1.714, 0.03em);
@@ -32,6 +32,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .second-section {
+    padding-bottom: 60px;
     &__icon {
       width: 354px;
       height: 120px;
@@ -44,6 +45,9 @@
         width: 354px;
         flex-basis: calc((100% - 30px) / 3);
       }
+    }
+    & h3 {
+      text-align: left;
     }
   }
 }

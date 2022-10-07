@@ -116,10 +116,10 @@
 
 @media screen and (min-width: 1200px) {
   .grid {
+    padding: 0;
     &__image {
       width: 370px;
       &-list {
-        justify-content: flex-start;
         padding-bottom: 94px;
         & li {
           width: 370px;
