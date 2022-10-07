@@ -128,7 +128,24 @@
     &__icon {
       fill: $main-grey-color;
     }
-
+    &__item-list {
+      list-style: none;
+      display: flex;
+      gap: 46px;
+    }
+    &__item {
+      @include font(14px, 500, 1.2, 0.02em);
+      text-decoration: none;
+      color: $black-color;
+      &:hover,
+      &:focus {
+        color: $main-blue-color;
+        @include animation;
+      }
+      &--active {
+        color: $main-blue-color;
+      }
+    }
     &__underline::after {
       content: "";
       background-color: $main-blue-color;

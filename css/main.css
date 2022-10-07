@@ -250,6 +250,31 @@ body {
   .navigation__icon {
     fill: #757575;
   }
+  .navigation__item-list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 46px;
+  }
+  .navigation__item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #000000;
+  }
+  .navigation__item:hover, .navigation__item:focus {
+    color: #2196f3;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation__item--active {
+    color: #2196f3;
+  }
   .navigation__underline::after {
     content: "";
     background-color: #2196f3;
